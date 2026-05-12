@@ -354,30 +354,6 @@ export const albums = {
         ]
     },
 
-    guts: {
-    id: "13",
-    name: "GUTS",
-    artist: "Olivia Rodrigo",
-    releaseDate: "September 8, 2023",
-    genre: "Pop / Pop-Punk",
-    label: "Geffen Records",
-    albumCover: "/olivia/guts.jpg",
-    songs: [
-        { songId: "131", songName: "all-american bitch", songFeatures: "", songLength: "2:45" },
-        { songId: "132", songName: "bad idea right?", songFeatures: "", songLength: "3:04" },
-        { songId: "133", songName: "vampire", songFeatures: "", songLength: "3:39" },
-        { songId: "134", songName: "lacy", songFeatures: "", songLength: "2:57" },
-        { songId: "135", songName: "ballad of a homeschooled girl", songFeatures: "", songLength: "3:23" },
-        { songId: "136", songName: "making the bed", songFeatures: "", songLength: "3:18" },
-        { songId: "137", songName: "logical", songFeatures: "", songLength: "3:51" },
-        { songId: "138", songName: "get him back!", songFeatures: "", songLength: "3:31" },
-        { songId: "139", songName: "love is embarrassing", songFeatures: "", songLength: "2:34" },
-        { songId: "1310", songName: "the grudge", songFeatures: "", songLength: "3:09" },
-        { songId: "1311", songName: "pretty isn't pretty", songFeatures: "", songLength: "3:19" },
-        { songId: "1312", songName: "teenage dream", songFeatures: "", songLength: "3:42" },
-    ]
-    },
-
 
     // ──────────────────────── Viktor Sheen ────────────────────────
 
@@ -875,4 +851,86 @@ mansBestFriend: {
         { songId: "3212", songName: "Goodbye", songFeatures: "", songLength: "" }
     ]
 },
+
+blok: {
+    id: "33",
+    name: "Blok",
+    artist: "Alex Nicolas & Kreyzo",
+    releaseDate: "June 19, 2024",
+    genre: "Hip-Hop / Rap, CZ Underground",
+    label: "4K records",
+    albumCover: "/random/blok.png",
+    songs: [
+        { songId: "331", songName: "Mentální Blok", songFeatures: "", songLength: "1:50" },
+        { songId: "332", songName: "K-Klasik", songFeatures: "", songLength: "2:37" },
+        { songId: "333", songName: "Gepetos", songFeatures: "", songLength: "2:24" },
+        { songId: "334", songName: "Revizor", songFeatures: "David Kudrna & Kobe", songLength: "3:36" }
+    ]
+},
+
+ruletaBlackjack: {
+    id: "34",
+    name: "Ruleta & Blackjack",
+    artist: "Alex Nicolas",
+    releaseDate: "August 18, 2024",
+    genre: "Rap, CZ Underground",
+    label: "4K records",
+    albumCover: "/random/ruleta.png",
+    songs: [
+        { songId: "341", songName: "Ruleta & Blackjack", songFeatures: "", songLength: "1:30" }
+    ]
+},
+
+kalhoty1: {
+    id: "35",
+    name: "posrany kalhoty",
+    artist: "TWO BITES",
+    releaseDate: "August 20, 2024",
+    genre: "Rap, CZ Underground",
+    label: "TWO BITES",
+    albumCover: "/random/kalhoty.png",
+    songs: [
+        { songId: "351", songName: "posrany kalhoty", songFeatures: "kobe", songLength: "5:04" }
+    ]
+},
+
+kalhoty2: {
+    id: "36",
+    name: "posrany kalhoty 2",
+    artist: "TWO BITES",
+    releaseDate: "August 20, 2024",
+    genre: "Rap, CZ Underground",
+    label: "TWO BITES",
+    albumCover: "/random/kalhoty2.png",
+    songs: [
+        { songId: "361", songName: "posrany kalhoty 2", songFeatures: "kobe & Kreyzo", songLength: "3:23" }
+    ]
+},
+
+metanfetamin: {
+    id: "37",
+    name: "METANFETAMIN",
+    artist: "TWO BITES",
+    releaseDate: "February 11, 2024",
+    genre: "Hip-Hop / Rap, CZ Underground",
+    label: "TWO BITES",
+    albumCover: "/random/metanfetamin.png",
+    songs: [
+        { songId: "371", songName: "METANFETAMIN", songFeatures: "", songLength: "2:40" }
+    ]
+},
+
+jackpod: {
+    id: "38",
+    name: "JACKPOD",
+    artist: "TWO BITES",
+    releaseDate: "September 10, 2024",
+    genre: "Hip-Hop / Rap, CZ Underground",
+    label: "TWO BITES",
+    albumCover: "/random/jackpod.png",
+    songs: [
+        { songId: "381", songName: "JACKPOD", songFeatures: "", songLength: "3:53" }
+    ]
+},
+
 };
