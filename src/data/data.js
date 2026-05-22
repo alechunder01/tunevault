@@ -6,7 +6,7 @@ export const albums = {
         releaseDate: "November 15, 2011",
         genre: "Hip-Hop / R&B",
         label: "Young Money / Cash Money / Republic",
-        albumCover: "/drake/takecare.jpg",
+        albumCover: "/drake/takecare.webp",
         songs: [
             { songId: "11", songName: "Over My Dead Body", songFeatures: "", songLength: "4:32" },
             { songId: "12", songName: "Shot for Me", songFeatures: "", songLength: "4:20" },
@@ -39,7 +39,7 @@ export const albums = {
         releaseDate: "September 24, 2013",
         genre: "Hip-Hop / R&B",
         label: "Young Money / Cash Money / Republic",
-        albumCover: "/drake/nothingwasthesame.jpg",
+        albumCover: "/drake/nothingwasthesame.webp",
         songs: [
             { songId: "21", songName: "Tuscan Leather", songFeatures: "", songLength: "7:55" },
             { songId: "22", songName: "Furthest Thing", songFeatures: "", songLength: "5:39" },
@@ -66,7 +66,7 @@ export const albums = {
         releaseDate: "February 13, 2015",
         genre: "Hip-Hop / Trap",
         label: "Young Money / Cash Money / Republic",
-        albumCover: "/drake/ifyourereading.jpg",
+        albumCover: "/drake/ifyourereading.webp",
         songs: [
             { songId: "31", songName: "Legend", songFeatures: "", songLength: "3:43" },
             { songId: "32", songName: "Energy", songFeatures: "", songLength: "3:09" },
@@ -94,7 +94,7 @@ export const albums = {
         releaseDate: "September 20, 2015",
         genre: "Hip-Hop / Trap",
         label: "Young Money / Epic / A1",
-        albumCover: "/drake/whatatime.jpg",
+        albumCover: "/drake/whatatime.webp",
         songs: [
             { songId: "41", songName: "Digital Dash", songFeatures: "", songLength: "3:17" },
             { songId: "42", songName: "Big Rings", songFeatures: "", songLength: "3:35" },
@@ -116,7 +116,7 @@ export const albums = {
         releaseDate: "April 29, 2016",
         genre: "Hip-Hop / R&B / Dancehall",
         label: "Young Money / Cash Money / Republic",
-        albumCover: "/drake/views.jpg",
+        albumCover: "/drake/views.webp",
         songs: [
             { songId: "51", songName: "Keep the Family Close", songFeatures: "", songLength: "5:18" },
             { songId: "52", songName: "9", songFeatures: "", songLength: "4:16" },
@@ -148,7 +148,7 @@ export const albums = {
         releaseDate: "March 18, 2017",
         genre: "Hip-Hop / Afrobeats / Dancehall",
         label: "Young Money / Cash Money / Republic",
-        albumCover: "/drake/morelife.jpg",
+        albumCover: "/drake/morelife.webp",
         songs: [
             { songId: "61", songName: "Free Smoke", songFeatures: "", songLength: "4:30" },
             { songId: "62", songName: "No Long Talk", songFeatures: "Giggs", songLength: "3:01" },
@@ -182,7 +182,7 @@ export const albums = {
         releaseDate: "June 29, 2018",
         genre: "Hip-Hop / R&B",
         label: "Young Money / Cash Money / Republic",
-        albumCover: "/drake/scorpion.jpg",
+        albumCover: "/drake/scorpion.webp",
         songs: [
             { songId: "71", songName: "Survival", songFeatures: "", songLength: "3:23" },
             { songId: "72", songName: "Nonstop", songFeatures: "", songLength: "3:28" },
@@ -219,7 +219,7 @@ export const albums = {
         releaseDate: "May 1, 2020",
         genre: "Hip-Hop / R&B",
         label: "Young Money / Cash Money / Republic",
-        albumCover: "/drake/darklane.jpg",
+        albumCover: "/drake/darklane.webp",
         songs: [
             { songId: "81", songName: "When to Say When", songFeatures: "", songLength: "5:08" },
             { songId: "82", songName: "Chicago Freestyle", songFeatures: "Giveon", songLength: "3:35" },
@@ -244,7 +244,7 @@ export const albums = {
         releaseDate: "September 3, 2021",
         genre: "Hip-Hop / R&B",
         label: "Young Money / Cash Money / Republic",
-        albumCover: "/drake/clb.jpg",
+        albumCover: "/drake/clb.webp",
         songs: [
             { songId: "91", songName: "Champagne Poetry", songFeatures: "", songLength: "5:25" },
             { songId: "92", songName: "TSU", songFeatures: "", songLength: "3:43" },
@@ -275,7 +275,7 @@ export const albums = {
         releaseDate: "June 17, 2022",
         genre: "Dance / House / R&B",
         label: "Young Money / Cash Money / Republic",
-        albumCover: "/drake/honestlynevermind.jpg",
+        albumCover: "/drake/honestlynevermind.webp",
         songs: [
             { songId: "101", songName: "Intro", songFeatures: "", songLength: "2:05" },
             { songId: "102", songName: "Falling Back", songFeatures: "", songLength: "4:11" },
@@ -301,7 +301,7 @@ export const albums = {
         releaseDate: "October 6, 2023",
         genre: "Hip-Hop / R&B",
         label: "Young Money / Cash Money / Republic",
-        albumCover: "/drake/forallthedog.jpg",
+        albumCover: "/drake/forallthedog.webp",
         songs: [
             { songId: "111", songName: "Virginia Beach", songFeatures: "", songLength: "4:01" },
             { songId: "112", songName: "Amen", songFeatures: "Teezo Touchdown", songLength: "3:25" },
@@ -335,7 +335,7 @@ export const albums = {
         releaseDate: "June 15, 2010",
         genre: "Hip-Hop / R&B",
         label: "Young Money / Cash Money / Universal Motown",
-        albumCover: "/drake/thankmelater.jpg",
+        albumCover: "/drake/thankmelater.webp",
         songs: [
             { songId: "121", songName: "Fireworks", songFeatures: "Alicia Keys", songLength: "4:30" },
             { songId: "122", songName: "Karaoke", songFeatures: "", songLength: "4:04" },
@@ -365,7 +365,7 @@ export const albums = {
     releaseDate: "August 15, 2014",
     genre: "Hip-Hop / Rap",
     label: "Blakkwood Records",
-    albumCover: "/viktor/levelup.jpg",
+    albumCover: "/viktor/levelup.webp",
     songs: [
         { songId: "141", songName: "Level Up", songFeatures: "LD", songLength: "3:37" },
         { songId: "142", songName: "Jenom Já", songFeatures: "", songLength: "3:57" },
@@ -385,7 +385,7 @@ projektAsia: {
     releaseDate: "June 28, 2015",
     genre: "Hip-Hop / Rap",
     label: "Blakkwood Records",
-    albumCover: "/viktor/projektasia.jpg",
+    albumCover: "/viktor/projektasia.webp",
     songs: [
         { songId: "151", songName: "Intro", songFeatures: "", songLength: "2:43" },
         { songId: "152", songName: "Prach", songFeatures: "", songLength: "2:26" },
@@ -414,7 +414,7 @@ nsd: {
     releaseDate: "October 10, 2016",
     genre: "Hip-Hop / Rap",
     label: "Blakkwood Records",
-    albumCover: "/viktor/nsd.jpg",
+    albumCover: "/viktor/nsd.webp",
     songs: [
         { songId: "161", songName: "NSD", songFeatures: "", songLength: "3:53" },
         { songId: "162", songName: "Offline", songFeatures: "", songLength: "3:00" },
@@ -441,7 +441,7 @@ nsd: {
     releaseDate: "September 7, 2017",
     genre: "Hip-Hop / Rap",
     label: "Blakkwood Records",
-    albumCover: "/viktor/jungler.jpg",
+    albumCover: "/viktor/jungler.webp",
     songs: [
         { songId: "171", songName: "Planeta opic", songFeatures: "", songLength: "2:38" },
         { songId: "172", songName: "Dopis z jungle", songFeatures: "", songLength: "2:50" },
@@ -466,7 +466,7 @@ cernobilejSvet: {
     releaseDate: "May 16, 2019",
     genre: "Hip-Hop / Rap",
     label: "MIKE ROFT Records",
-    albumCover: "/viktor/cernobilejsvet.jpg",
+    albumCover: "/viktor/cernobilejsvet.webp",
     songs: [
         { songId: "181", songName: "Černobílej svět", songFeatures: "", songLength: "2:41" },
         { songId: "182", songName: "Demons", songFeatures: "Nik Tendo", songLength: "3:22" },
@@ -493,7 +493,7 @@ barvy: {
     releaseDate: "October 17, 2020",
     genre: "Hip-Hop / Rap",
     label: "MIKE ROFT Records / WM Czech Republic",
-    albumCover: "/viktor/barvy.jpg",
+    albumCover: "/viktor/barvy.webp",
     songs: [
         { songId: "191", songName: "ice baby", songFeatures: "", songLength: "1:35" },
         { songId: "192", songName: "Poslední přání", songFeatures: "", songLength: "2:23" },
@@ -521,7 +521,7 @@ pribehyasny: {
     releaseDate: "November 17, 2021",
     genre: "Hip-Hop / Rap",
     label: "MIKE ROFT Records",
-    albumCover: "/viktor/pribehyasny.jpg",
+    albumCover: "/viktor/pribehyasny.webp",
     songs: [
         { songId: "201", songName: "Sklo", songFeatures: "", songLength: "2:20" },
         { songId: "202", songName: "Příběhy, sny", songFeatures: "", songLength: "2:14" },
@@ -548,7 +548,7 @@ roadtrip: {
     releaseDate: "February 3, 2023",
     genre: "Hip-Hop / Rap",
     label: "MIKE ROFT Records",
-    albumCover: "/viktor/roadtrip.jpg",
+    albumCover: "/viktor/roadtrip.webp",
     songs: [
         { songId: "211", songName: "Benz", songFeatures: "", songLength: "2:05" },
         { songId: "212", songName: "Dívej", songFeatures: "", songLength: "2:36" },
@@ -572,7 +572,7 @@ planetaOpic: {
     releaseDate: "October 13, 2023",
     genre: "Hip-Hop / Rap",
     label: "MIKE ROFT Records",
-    albumCover: "/viktor/planetaopic.jpg",
+    albumCover: "/viktor/planetaopic.webp",
     songs: [
         { songId: "221", songName: "Ape Song", songFeatures: "", songLength: "2:24" },
         { songId: "222", songName: "Probuzení", songFeatures: "", songLength: "2:17" },
@@ -599,7 +599,7 @@ impostorSyndrom: {
     releaseDate: "November 8, 2024",
     genre: "Hip-Hop / Rap",
     label: "MIKE ROFT Records / WM Czech Republic",
-    albumCover: "/viktor/impostorsyndrom.jpg",
+    albumCover: "/viktor/impostorsyndrom.webp",
     songs: [
         { songId: "231", songName: "Ohnivej kruh", songFeatures: "", songLength: "2:10" },
         { songId: "232", songName: "Zvyk", songFeatures: "SIMILIVINLIFE", songLength: "2:31" },
@@ -627,7 +627,7 @@ jaMeDruheJaAKristina: {
     releaseDate: "November 12, 2025",
     genre: "Hip-Hop / Rap",
     label: "Warner Music Czech Republic",
-    albumCover: "/viktor/buka_jmdjak.jpg",
+    albumCover: "/viktor/buka_jmdjak.webp",
     songs: [
         { songId: "241", songName: "Já už vidím", songFeatures: "", songLength: "2:00" },
         { songId: "242", songName: "Dostihy a sázky", songFeatures: "", songLength: "2:45" },
@@ -660,7 +660,7 @@ svedomi: {
     releaseDate: "November 20, 2020",
     genre: "Hip-Hop / Rap",
     label: "MIKE ROFT Records",
-    albumCover: "/calin/svedomi.jpg",
+    albumCover: "/calin/svedomi.webp",
     songs: [
         { songId: "251", songName: "Rychlí", songFeatures: "", songLength: "2:40" },
         { songId: "252", songName: "Rubín", songFeatures: "", songLength: "3:05" },
@@ -685,7 +685,7 @@ popstar: {
     releaseDate: "March 11, 2022",
     genre: "Hip-Hop / Rap",
     label: "MIKE ROFT Records",
-    albumCover: "/calin/popstar.jpg",
+    albumCover: "/calin/popstar.webp",
     songs: [
         { songId: "261", songName: "Intro 4", songFeatures: "", songLength: "2:06" },
         { songId: "262", songName: "Hot Dropout", songFeatures: "fiedlerski", songLength: "2:00" },
@@ -710,7 +710,7 @@ bieberFiever: {
     releaseDate: "May 31, 2024",
     genre: "Hip-Hop / Rap / R&B",
     label: "MIKE ROFT Records",
-    albumCover: "/calin/bieberfever.jpg",
+    albumCover: "/calin/bieberfever.webp",
     songs: [
         { songId: "271", songName: "FTU", songFeatures: "", songLength: "1:57" },
         { songId: "272", songName: "Big Time", songFeatures: "", songLength: "1:46" },
@@ -738,7 +738,7 @@ bieberFieverTourLife: {
     releaseDate: "December 6, 2024",
     genre: "Hip-Hop / Rap",
     label: "MIKE ROFT Records",
-    albumCover: "/calin/bieberfevertourlife.jpg",
+    albumCover: "/calin/bieberfevertourlife.webp",
     songs: [
         { songId: "281", songName: "Cartier", songFeatures: "Cédric (CZE)", songLength: "2:21" },
         { songId: "282", songName: "No Time", songFeatures: "Ektor", songLength: "2:02" },
@@ -762,7 +762,7 @@ skippyMcdippy: {
     releaseDate: "2025",
     genre: "Pop / Bedroom Pop",
     label: "Frutti DiMara / Warner Music",
-    albumCover: "/calin/skippy_mcdippy.jpg",
+    albumCover: "/calin/skippy_mcdippy.webp",
     songs: [
         { songId: "291", songName: "Proti světu", songFeatures: "", songLength: "1:28" },
         { songId: "292", songName: "Červená vlajka", songFeatures: "", songLength: "2:12" },
@@ -786,7 +786,7 @@ emailsICantSend: {
     releaseDate: "July 15, 2022",
     genre: "Pop",
     label: "Island Records",
-    albumCover: "/sabrina/emails_i_cant_send.jpg",
+    albumCover: "/sabrina/emails_i_cant_send.webp",
     songs: [
         { songId: "301", songName: "emails i can't send", songFeatures: "", songLength: "1:44" },
         { songId: "302", songName: "Vicious", songFeatures: "", songLength: "2:29" },
@@ -811,7 +811,7 @@ shortNSweet: {
     releaseDate: "August 23, 2024",
     genre: "Pop",
     label: "Island Records",
-    albumCover: "/sabrina/short_n_sweet.jpg",
+    albumCover: "/sabrina/short_n_sweet.webp",
     songs: [
         { songId: "311", songName: "Taste", songFeatures: "", songLength: "2:37" },
         { songId: "312", songName: "Please Please Please", songFeatures: "", songLength: "3:06" },
@@ -835,7 +835,7 @@ mansBestFriend: {
     releaseDate: "August 29, 2025",
     genre: "Pop",
     label: "Island Records",
-    albumCover: "/sabrina/mans_best_friend.jpg",
+    albumCover: "/sabrina/mans_best_friend.webp",
     songs: [
         { songId: "321", songName: "Manchild", songFeatures: "", songLength: "3:33" },
         { songId: "322", songName: "Tears", songFeatures: "", songLength: "2:40" },
@@ -859,7 +859,7 @@ blok: {
     releaseDate: "June 19, 2024",
     genre: "Hip-Hop / Rap / CZ Underground",
     label: "4K records",
-    albumCover: "/random/blok.png",
+    albumCover: "/random/blok.webp",
     songs: [
         { songId: "331", songName: "Mentální Blok", songFeatures: "", songLength: "1:50" },
         { songId: "332", songName: "K-Klasik", songFeatures: "", songLength: "2:37" },
@@ -875,7 +875,7 @@ ruletaBlackjack: {
     releaseDate: "August 18, 2024",
     genre: "Rap / CZ Underground",
     label: "4K records",
-    albumCover: "/random/ruleta.png",
+    albumCover: "/random/ruleta.webp",
     songs: [
         { songId: "341", songName: "Ruleta & Blackjack", songFeatures: "", songLength: "1:30" }
     ]
@@ -888,7 +888,7 @@ kalhoty1: {
     releaseDate: "August 20, 2024",
     genre: "Rap / CZ Underground",
     label: "TWO BITES",
-    albumCover: "/random/kalhoty.png",
+    albumCover: "/random/kalhoty.webp",
     songs: [
         { songId: "351", songName: "posrany kalhoty", songFeatures: "kobe", songLength: "5:04" }
     ]
@@ -901,7 +901,7 @@ kalhoty2: {
     releaseDate: "August 20, 2024",
     genre: "Rap / CZ Underground",
     label: "TWO BITES",
-    albumCover: "/random/kalhoty2.png",
+    albumCover: "/random/kalhoty2.webp",
     songs: [
         { songId: "361", songName: "posrany kalhoty 2", songFeatures: "kobe & Kreyzo", songLength: "3:23" }
     ]
@@ -914,7 +914,7 @@ metanfetamin: {
     releaseDate: "February 11, 2024",
     genre: "Hip-Hop / CZ Underground",
     label: "TWO BITES",
-    albumCover: "/random/metanfetamin.png",
+    albumCover: "/random/metanfetamin.webp",
     songs: [
         { songId: "371", songName: "METANFETAMIN", songFeatures: "", songLength: "2:40" }
     ]
@@ -927,7 +927,7 @@ jackpod: {
     releaseDate: "September 10, 2024",
     genre: "Hip-Hop / CZ Underground",
     label: "TWO BITES",
-    albumCover: "/random/jackpod.png",
+    albumCover: "/random/jackpod.webp",
     songs: [
         { songId: "381", songName: "JACKPOD", songFeatures: "", songLength: "3:53" }
     ]
@@ -940,7 +940,7 @@ petminut: {
     releaseDate: "May 22, 2026",
     genre: "Hip-Hop / CZ Underground",
     label: "progress_culture",
-    albumCover: "/random/5minut.png",
+    albumCover: "/random/5minut.webp",
     songs: [
         { songId: "391", songName: "5 MINUT", songFeatures: "", songLength: "1:20" },
         { songId: "392", songName: "KOKOT", songFeatures: "", songLength: "2:16" },
@@ -957,7 +957,7 @@ petminut: {
     releaseDate: "February 10, 2004",
     genre: "Hip-Hop / Soul",
     label: "Roc-A-Fella / Def Jam",
-    albumCover: "/kanye/collegedropout.jpg",
+    albumCover: "/kanye/collegedropout.webp",
     songs: [
       { songId: "401", songName: "Intro", songFeatures: "", songLength: "0:53" },
       { songId: "402", songName: "We Don't Care", songFeatures: "", songLength: "4:18" },
@@ -990,7 +990,7 @@ petminut: {
     releaseDate: "August 30, 2005",
     genre: "Hip-Hop / Soul",
     label: "Roc-A-Fella / Def Jam",
-    albumCover: "/kanye/lateregistration.jpg",
+    albumCover: "/kanye/lateregistration.webp",
     songs: [
       { songId: "411", songName: "Wake Up Mr. West", songFeatures: "", songLength: "1:06" },
       { songId: "412", songName: "Heard 'Em Say", songFeatures: "Adam Levine", songLength: "3:37" },
@@ -1021,7 +1021,7 @@ petminut: {
     releaseDate: "September 11, 2007",
     genre: "Hip-Hop / Electronic",
     label: "Roc-A-Fella / Def Jam",
-    albumCover: "/kanye/graduation.jpg",
+    albumCover: "/kanye/graduation.webp",
     songs: [
       { songId: "421", songName: "Good Morning", songFeatures: "", songLength: "3:16" },
       { songId: "422", songName: "Champion", songFeatures: "", songLength: "2:59" },
@@ -1046,7 +1046,7 @@ petminut: {
     releaseDate: "November 24, 2008",
     genre: "Synth-Pop / Art Pop",
     label: "Roc-A-Fella / Def Jam",
-    albumCover: "/kanye/808s.jpg",
+    albumCover: "/kanye/808s.webp",
     songs: [
       { songId: "431", songName: "Say You Will", songFeatures: "", songLength: "6:27" },
       { songId: "432", songName: "Welcome to Heartbreak", songFeatures: "Kid Cudi", songLength: "4:34" },
@@ -1070,7 +1070,7 @@ petminut: {
     releaseDate: "November 22, 2010",
     genre: "Hip-Hop / Art Pop",
     label: "Roc-A-Fella / Def Jam",
-    albumCover: "/kanye/mbdtf.jpg",
+    albumCover: "/kanye/mbdtf.webp",
     songs: [
       { songId: "441", songName: "Dark Fantasy", songFeatures: "", songLength: "4:40" },
       { songId: "442", songName: "Gorgeous", songFeatures: "Kid Cudi, Raekwon", songLength: "5:59" },
@@ -1095,7 +1095,7 @@ petminut: {
     releaseDate: "June 18, 2013",
     genre: "Industrial Hip-Hop / Electronic",
     label: "Roc-A-Fella / Def Jam",
-    albumCover: "/kanye/yeezus.jpg",
+    albumCover: "/kanye/yeezus.webp",
     songs: [
       { songId: "451", songName: "On Sight", songFeatures: "", songLength: "2:58" },
       { songId: "452", songName: "Black Skinhead", songFeatures: "", songLength: "3:07" },
@@ -1117,7 +1117,7 @@ petminut: {
     releaseDate: "February 14, 2016",
     genre: "Hip-Hop / Gospel",
     label: "GOOD Music / Def Jam",
-    albumCover: "/kanye/tlop.jpg",
+    albumCover: "/kanye/tlop.webp",
     songs: [
       { songId: "461", songName: "Ultralight Beam", songFeatures: "Chance the Rapper, Kelly Price, Kirk Franklin, The-Dream", songLength: "5:09" },
       { songId: "462", songName: "Father Stretch My Hands Pt. 1", songFeatures: "Kid Cudi", songLength: "2:22" },
@@ -1148,7 +1148,7 @@ petminut: {
     releaseDate: "June 1, 2018",
     genre: "Hip-Hop",
     label: "GOOD Music / Def Jam",
-    albumCover: "/kanye/ye.jpg",
+    albumCover: "/kanye/ye.webp",
     songs: [
       { songId: "471", songName: "I Thought About Killing You", songFeatures: "", songLength: "3:36" },
       { songId: "472", songName: "Yikes", songFeatures: "", songLength: "3:40" },
@@ -1167,7 +1167,7 @@ petminut: {
     releaseDate: "October 25, 2019",
     genre: "Gospel Hip-Hop",
     label: "GOOD Music / Def Jam",
-    albumCover: "/kanye/jesusisking.jpg",
+    albumCover: "/kanye/jesusisking.webp",
     songs: [
       { songId: "481", songName: "Every Hour", songFeatures: "Sunday Service Choir", songLength: "1:36" },
       { songId: "482", songName: "Selah", songFeatures: "", songLength: "5:26" },
@@ -1190,7 +1190,7 @@ petminut: {
     releaseDate: "August 29, 2021",
     genre: "Hip-Hop / Gospel",
     label: "GOOD Music / Def Jam",
-    albumCover: "/kanye/donda.jpg",
+    albumCover: "/kanye/donda.webp",
     songs: [
       { songId: "491", songName: "Donda Chant", songFeatures: "", songLength: "2:21" },
       { songId: "492", songName: "Jail", songFeatures: "Jay-Z", songLength: "3:50" },
@@ -1234,7 +1234,7 @@ petminut: {
     releaseDate: "September 4, 2015",
     genre: "Hip-Hop / Trap",
     label: "Grand Hustle / Epic",
-    albumCover: "/travis/rodeo.jpg",
+    albumCover: "/travis/rodeo.webp",
     songs: [
       { songId: "501", songName: "Pornography", songFeatures: "", songLength: "5:16" },
       { songId: "502", songName: "Oh My Dis Side", songFeatures: "Quavo", songLength: "4:50" },
@@ -1259,7 +1259,7 @@ petminut: {
     releaseDate: "September 2, 2016",
     genre: "Hip-Hop / Trap",
     label: "Grand Hustle / Epic",
-    albumCover: "/travis/birdsinthetrap.jpg",
+    albumCover: "/travis/birdsinthetrap.webp",
     songs: [
       { songId: "511", songName: "the ends", songFeatures: "Swae Lee", songLength: "4:37" },
       { songId: "512", songName: "coordinate", songFeatures: "", songLength: "4:10" },
@@ -1283,7 +1283,7 @@ petminut: {
     releaseDate: "August 3, 2018",
     genre: "Hip-Hop / Psychedelic Trap",
     label: "Cactus Jack / Epic",
-    albumCover: "/travis/astroworld.jpg",
+    albumCover: "/travis/astroworld.webp",
     songs: [
       { songId: "521", songName: "STARGAZING", songFeatures: "", songLength: "4:49" },
       { songId: "522", songName: "CAROUSEL", songFeatures: "Frank Ocean", songLength: "3:35" },
@@ -1310,7 +1310,7 @@ petminut: {
     releaseDate: "July 28, 2023",
     genre: "Hip-Hop / Psychedelic",
     label: "Cactus Jack / Epic",
-    albumCover: "/travis/utopia.jpg",
+    albumCover: "/travis/utopia.webp",
     songs: [
       { songId: "531", songName: "HYAENA", songFeatures: "", songLength: "3:47" },
       { songId: "532", songName: "THANK GOD", songFeatures: "", songLength: "3:04" },
@@ -1347,7 +1347,7 @@ petminut: {
     releaseDate: "March 13, 2020",
     genre: "Hip-Hop / R&B / Trap",
     label: "Cactus Jack / Atlantic",
-    albumCover: "/dontoliver/heavensorhell.jpg",
+    albumCover: "/dontoliver/heavensorhell.webp",
     songs: [
       { songId: "541", songName: "Came Drippin", songFeatures: "", songLength: "2:13" },
       { songId: "542", songName: "No Idea", songFeatures: "", songLength: "2:37" },
@@ -1371,7 +1371,7 @@ petminut: {
     releaseDate: "October 8, 2021",
     genre: "Hip-Hop / R&B",
     label: "Cactus Jack / Atlantic",
-    albumCover: "/dontoliver/lifeofadon.jpg",
+    albumCover: "/dontoliver/lifeofadon.webp",
     songs: [
       { songId: "551", songName: "What You Need", songFeatures: "", songLength: "2:42" },
       { songId: "552", songName: "Flocky Flocky", songFeatures: "Travis Scott", songLength: "3:18" },
@@ -1395,7 +1395,7 @@ petminut: {
     releaseDate: "February 24, 2023",
     genre: "R&B / Trap Soul",
     label: "Cactus Jack / Atlantic",
-    albumCover: "/dontoliver/lovesick.jpg",
+    albumCover: "/dontoliver/lovesick.webp",
     songs: [
       { songId: "561", songName: "Do It Right", songFeatures: "", songLength: "3:10" },
       { songId: "562", songName: "4 Me", songFeatures: "", songLength: "2:50" },
@@ -1421,7 +1421,7 @@ petminut: {
     releaseDate: "June 14, 2024",
     genre: "Trap / Hip-Hop",
     label: "Cactus Jack / Atlantic",
-    albumCover: "/dontoliver/hardstonepsycho.jpg",
+    albumCover: "/dontoliver/hardstonepsycho.webp",
     songs: [
       { songId: "571", songName: "Kryptonite", songFeatures: "", songLength: "2:35" },
       { songId: "572", songName: "Tore Up", songFeatures: "", songLength: "2:28" },
@@ -1451,7 +1451,7 @@ petminut: {
     releaseDate: "October 24, 2006",
     genre: "Country / Pop",
     label: "Big Machine",
-    albumCover: "/taylorswift/taylorswift.jpg",
+    albumCover: "/taylorswift/taylorswift.webp",
     songs: [
       { songId: "581", songName: "Tim McGraw", songFeatures: "", songLength: "3:52" },
       { songId: "582", songName: "Picture to Burn", songFeatures: "", songLength: "3:22" },
@@ -1474,7 +1474,7 @@ petminut: {
     releaseDate: "November 11, 2008",
     genre: "Country Pop",
     label: "Big Machine",
-    albumCover: "/taylorswift/fearless.jpg",
+    albumCover: "/taylorswift/fearless.webp",
     songs: [
       { songId: "591", songName: "Fearless", songFeatures: "", songLength: "4:01" },
       { songId: "592", songName: "Fifteen", songFeatures: "", songLength: "4:54" },
@@ -1499,7 +1499,7 @@ petminut: {
     releaseDate: "October 25, 2010",
     genre: "Country Pop",
     label: "Big Machine",
-    albumCover: "/taylorswift/speaknow.jpg",
+    albumCover: "/taylorswift/speaknow.webp",
     songs: [
       { songId: "601", songName: "Mine", songFeatures: "", songLength: "3:50" },
       { songId: "602", songName: "Sparks Fly", songFeatures: "", songLength: "4:19" },
@@ -1525,7 +1525,7 @@ petminut: {
     releaseDate: "October 22, 2012",
     genre: "Country Pop / Pop Rock",
     label: "Big Machine",
-    albumCover: "/taylorswift/red.jpg",
+    albumCover: "/taylorswift/red.webp",
     songs: [
       { songId: "611", songName: "State of Grace", songFeatures: "", songLength: "4:55" },
       { songId: "612", songName: "Red", songFeatures: "", songLength: "3:42" },
@@ -1553,7 +1553,7 @@ petminut: {
     releaseDate: "October 27, 2014",
     genre: "Synth-Pop / Pop",
     label: "Big Machine",
-    albumCover: "/taylorswift/1989.jpg",
+    albumCover: "/taylorswift/1989.webp",
     songs: [
       { songId: "621", songName: "Welcome to New York", songFeatures: "", songLength: "3:32" },
       { songId: "622", songName: "Blank Space", songFeatures: "", songLength: "3:51" },
@@ -1578,7 +1578,7 @@ petminut: {
     releaseDate: "November 10, 2017",
     genre: "Pop / Electropop",
     label: "Big Machine",
-    albumCover: "/taylorswift/reputation.jpg",
+    albumCover: "/taylorswift/reputation.webp",
     songs: [
       { songId: "631", songName: "...Ready for It?", songFeatures: "", songLength: "3:28" },
       { songId: "632", songName: "End Game", songFeatures: "Ed Sheeran, Future", songLength: "4:04" },
@@ -1605,7 +1605,7 @@ petminut: {
     releaseDate: "August 23, 2019",
     genre: "Pop / Synth-Pop",
     label: "Republic",
-    albumCover: "/taylorswift/lover.jpg",
+    albumCover: "/taylorswift/lover.webp",
     songs: [
       { songId: "641", songName: "I Forgot That You Existed", songFeatures: "", songLength: "2:53" },
       { songId: "642", songName: "Cruel Summer", songFeatures: "", songLength: "2:58" },
@@ -1635,7 +1635,7 @@ petminut: {
     releaseDate: "July 24, 2020",
     genre: "Indie Folk / Alternative Pop",
     label: "Republic",
-    albumCover: "/taylorswift/folklore.jpg",
+    albumCover: "/taylorswift/folklore.webp",
     songs: [
       { songId: "651", songName: "the 1", songFeatures: "", songLength: "3:30" },
       { songId: "652", songName: "cardigan", songFeatures: "", songLength: "3:59" },
@@ -1663,7 +1663,7 @@ petminut: {
     releaseDate: "December 11, 2020",
     genre: "Indie Folk / Alternative",
     label: "Republic",
-    albumCover: "/taylorswift/evermore.jpg",
+    albumCover: "/taylorswift/evermore.webp",
     songs: [
       { songId: "661", songName: "willow", songFeatures: "", songLength: "3:34" },
       { songId: "662", songName: "champagne problems", songFeatures: "", songLength: "4:04" },
@@ -1690,7 +1690,7 @@ petminut: {
     releaseDate: "October 21, 2022",
     genre: "Pop / Synth-Pop",
     label: "Republic",
-    albumCover: "/taylorswift/midnights.jpg",
+    albumCover: "/taylorswift/midnights.webp",
     songs: [
       { songId: "671", songName: "Lavender Haze", songFeatures: "", songLength: "3:22" },
       { songId: "672", songName: "Maroon", songFeatures: "", songLength: "3:38" },
@@ -1714,7 +1714,7 @@ petminut: {
     releaseDate: "April 19, 2024",
     genre: "Alternative Pop / Art Pop",
     label: "Republic",
-    albumCover: "/taylorswift/torturedpoets.jpg",
+    albumCover: "/taylorswift/torturedpoets.webp",
     songs: [
       { songId: "681", songName: "Fortnight", songFeatures: "Post Malone", songLength: "3:48" },
       { songId: "682", songName: "The Tortured Poets Department", songFeatures: "", songLength: "3:12" },
@@ -1741,7 +1741,7 @@ petminut: {
     releaseDate: "March 28, 2026",
     genre: "Hip-Hop / Rap",
     label: "YZY / Gamma",
-    albumCover: "/kanye/bully.jpg",
+    albumCover: "/kanye/bully.webp",
     songs: [
       { songId: "691", songName: "KING", songFeatures: "", songLength: "2:07" },
       { songId: "692", songName: "THIS A MUST", songFeatures: "", songLength: "1:27" },
@@ -1769,7 +1769,7 @@ petminut: {
     releaseDate: "February 13, 2026",
     genre: "Hip-Hop / Trap",
     label: "Cactus Jack / Atlantic",
-    albumCover: "/dontoliver/octane.jpg",
+    albumCover: "/dontoliver/octane.webp",
     songs: [
       { songId: "701", songName: "E85", songFeatures: "", songLength: "2:34" },
       { songId: "702", songName: "Body", songFeatures: "", songLength: "2:36" },
@@ -1798,7 +1798,7 @@ petminut: {
     releaseDate: "May 24, 2017",
     genre: "Rap",
     label: "Milion+",
-    albumCover: "/yzomandias/zhora.jpg",
+    albumCover: "/yzomandias/zhora.webp",
     songs: [
       { songId: "711", songName: "Zhora vypadá všechno líp", songFeatures: "", songLength: "3:11" },
       { songId: "712", songName: "Nix moc", songFeatures: "", songLength: "2:41" },
@@ -1823,7 +1823,7 @@ petminut: {
     releaseDate: "April 30, 2018",
     genre: "Rap",
     label: "Milion+",
-    albumCover: "/yzomandias/roxano.jpg",
+    albumCover: "/yzomandias/roxano.webp",
     songs: [
       { songId: "721", songName: "Andez", songFeatures: "", songLength: "2:30" },
       { songId: "722", songName: "TTBB", songFeatures: "Viktor Sheen & Nik Tendo & Zayo & Karlo", songLength: "4:15" },
@@ -1848,7 +1848,7 @@ petminut: {
     releaseDate: "December 6, 2019",
     genre: "Rap",
     label: "Milion+ / Universal Music",
-    albumCover: "/yzomandias/dobra_duse.jpg",
+    albumCover: "/yzomandias/dobra_duse.webp",
     songs: [
       { songId: "731", songName: "Dítě Milion Plus", songFeatures: "", songLength: "2:15" },
       { songId: "732", songName: "Nezklamal jsem", songFeatures: "", songLength: "3:02" },
@@ -1867,7 +1867,7 @@ petminut: {
     releaseDate: "November 27, 2020",
     genre: "Rap",
     label: "Milion+ / Universal Music",
-    albumCover: "/yzomandias/prozyum.jpg",
+    albumCover: "/yzomandias/prozyum.webp",
     songs: [
       { songId: "741", songName: "Melanž", songFeatures: "", songLength: "2:54" },
       { songId: "742", songName: "Adikt Freestyle", songFeatures: "", songLength: "3:19" },
@@ -1887,7 +1887,7 @@ petminut: {
     releaseDate: "November 16, 2022",
     genre: "Rap",
     label: "Milion+ / Universal Music",
-    albumCover: "/yzomandias/kruhy_vlny.jpg",
+    albumCover: "/yzomandias/kruhy_vlny.webp",
     songs: [
       { songId: "751", songName: "Kruhy a vlny", songFeatures: "", songLength: "2:45" },
       { songId: "752", songName: "Láska & Bolest", songFeatures: "", songLength: "3:10" },
@@ -1906,7 +1906,7 @@ petminut: {
     releaseDate: "September 15, 2023",
     genre: "Rap",
     label: "Milion+ / Universal Music",
-    albumCover: "/yzomandias/zpaky_na_planetu.jpg",
+    albumCover: "/yzomandias/zpaky_na_planetu.webp",
     songs: [
       { songId: "761", songName: "Návrat", songFeatures: "", songLength: "2:58" },
       { songId: "762", songName: "Zpátky na svojí planetu", songFeatures: "", songLength: "3:15" },
@@ -1925,7 +1925,7 @@ petminut: {
     releaseDate: "November 21, 2024",
     genre: "Rap",
     label: "PTK Music / Milion+ / Universal Music",
-    albumCover: "/yzomandias/painkillers.jpg",
+    albumCover: "/yzomandias/painkillers.webp",
     songs: [
       { songId: "771", songName: "Painkillers", songFeatures: "", songLength: "3:15" },
       { songId: "772", songName: "Generace", songFeatures: "", songLength: "2:48" },
