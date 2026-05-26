@@ -13,7 +13,8 @@ function Footer() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
-                flexWrap: 'wrap'
+                flexWrap: 'wrap',
+                backgroundColor: 'rgba(105, 105, 105, 0.16)'
             }}>
                 <span style={{
                     color: '#fff',

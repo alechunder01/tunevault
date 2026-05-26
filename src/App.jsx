@@ -67,7 +67,7 @@ function App() {
         activeGenre={activeGenre}
         sortBy={sortBy}
       />
-      <div className="container mt-3">
+        <div className="container mt-3" style={{ paddingTop: '90px' }}>
         <div className="row">
           {sortedAndFiltered.map((album) => (
             <AlbumTile key={album.id} album={album} />
@@ -80,6 +80,15 @@ function App() {
         )}
       </div>
       <Footer/>
+      <button className='popupbutton'>
+        About
+      </button>
+      <button className='popupbutton'>
+        Contact
+      </button>
+      <button className='popupbutton'>
+        Github
+      </button>
     </>
   );
 }

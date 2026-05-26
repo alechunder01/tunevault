@@ -19,92 +19,86 @@ const Navbar = ({
   };
 
   return (
-    <nav
-      className="glass-tile"
-      style={{
-        position: 'sticky',
-        top: '16px',
-        zIndex: 100,
-        margin: '16px 24px',
-        padding: '12px 24px',
-        borderRadius: '16px',
-        display: 'flex',
-        alignItems: 'center',
-        gap: '1.5rem',
-        flexWrap: 'wrap',
-      }}
-    >
-      {/* Title */}
-      <span style={{
-        color: '#fff',
-        fontWeight: 700,
-        fontSize: '2rem',
-        letterSpacing: '-0.3px',
-        flexShrink: 0,
-      }}>
-        Tune Vault
-      </span>
-
-      <div style={{ display: 'flex', gap: '10px', flex: 1, flexWrap: 'wrap' }}>
-        {/* Artist dropdown */}
-        <select
-          value={activeArtist ?? ''}
-          onChange={e => onFilterArtist(e.target.value || null)}
-          style={dropdownStyle}
-        >
-          <option value="">All Artists</option>
-          {artists.map(artist => (
-            <option key={artist} value={artist}>{artist}</option>
-          ))}
-        </select>
-
-        {/* Genre dropdown */}
-        <select
-          value={activeGenre ?? ''}
-          onChange={e => onFilterGenre(e.target.value || null)}
-          style={dropdownStyle}
-        >
-          <option value="">All Genres</option>
-          {genres.map(genre => (
-            <option key={genre} value={genre}>{genre}</option>
-          ))}
-        </select>
-
-        {/* Sort dropdown */}
-        <select
-          value={sortBy}
-          onChange={e => onSortChange(e.target.value)}
-          style={dropdownStyle}
-        >
-          <option value="album-az">Album Name (A-Z)</option>
-          <option value="album-za">Album Name (Z-A)</option>
-          <option value="artist-az">Artist Name (A-Z)</option>
-          <option value="artist-za">Artist Name (Z-A)</option>
-          <option value="date-oldest">Release Date (Oldest - Newest)</option>
-          <option value="date-newest">Release Date (Newest - Oldest)</option>
-        </select>
-      </div>
-
-      {/* Search */}
-      <input
-        type="text"
-        placeholder="Search albums..."
-        value={query}
-        onChange={handleSearch}
+    <div style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100, padding: '16px 24px' }}>
+      <nav
+        className="glass-tile"
         style={{
-          background: 'rgba(255,255,255,0.1)',
-          border: '1px solid rgba(255,255,255,0.2)',
-          borderRadius: '50px',
-          padding: '7px 16px',
-          color: '#fff',
-          fontSize: '0.85rem',
-          outline: 'none',
-          backdropFilter: 'blur(8px)',
-          width: '180px',
-          flexShrink: 0,
+          padding: '12px 24px',
+          borderRadius: '16px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '1.5rem',
+          flexWrap: 'wrap',
+          backgroundColor: 'rgba(105, 105, 105, 0.16)'
         }}
-      />
-    </nav>
+      >
+        <span style={{
+          color: '#fff',
+          fontWeight: 700,
+          fontSize: '2rem',
+          letterSpacing: '-0.3px',
+          flexShrink: 0,
+        }}>
+          Tune Vault
+        </span>
+
+        <div style={{ display: 'flex', gap: '10px', flex: 1, flexWrap: 'wrap' }}>
+          <select
+            value={activeArtist ?? ''}
+            onChange={e => onFilterArtist(e.target.value || null)}
+            style={dropdownStyle}
+          >
+            <option value="">All Artists</option>
+            {artists.map(artist => (
+              <option key={artist} value={artist}>{artist}</option>
+            ))}
+          </select>
+
+          <select
+            value={activeGenre ?? ''}
+            onChange={e => onFilterGenre(e.target.value || null)}
+            style={dropdownStyle}
+          >
+            <option value="">All Genres</option>
+            {genres.map(genre => (
+              <option key={genre} value={genre}>{genre}</option>
+            ))}
+          </select>
+
+          <select
+            value={sortBy}
+            onChange={e => onSortChange(e.target.value)}
+            style={dropdownStyle}
+          >
+            <option value="album-az">Album Name (A-Z)</option>
+            <option value="album-za">Album Name (Z-A)</option>
+            <option value="artist-az">Artist Name (A-Z)</option>
+            <option value="artist-za">Artist Name (Z-A)</option>
+            <option value="date-oldest">Release Date (Oldest - Newest)</option>
+            <option value="date-newest">Release Date (Newest - Oldest)</option>
+          </select>
+        </div>
+
+        <input
+          type="text"
+          placeholder="Search albums..."
+          value={query}
+          onChange={handleSearch}
+          style={{
+            background: 'rgba(255,255,255,0.1)',
+            border: '1px solid rgba(255,255,255,0.2)',
+            borderRadius: '50px',
+            padding: '7px 16px',
+            color: '#fff',
+            fontSize: '0.85rem',
+            outline: 'none',
+            backdropFilter: 'blur(8px)',
+            width: '180px',
+            flexShrink: 0,
+          }}
+        />
+      </nav>
+    </div>
   );
 };
 

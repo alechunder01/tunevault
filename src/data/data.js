@@ -1935,5 +1935,17 @@ petminut: {
       { songId: "776", songName: "No Sleep", songFeatures: "", songLength: "2:34" },
       { songId: "777", songName: "Nikdy zpět", songFeatures: "", songLength: "3:12" }
     ]
+  },
+  test: {
+    id: "78",
+    name: "test",
+    artist: "test",
+    releaseDate: "November 21, 2024",
+    genre: "Rap",
+    label: "test",
+    songs: [
+      {},
+      {}
+    ]
   }
 }
