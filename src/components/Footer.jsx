@@ -33,15 +33,7 @@ function Footer() {
                 }}>
                     made by Alex Nicolas
                 </span>
-                <div style={{
-                    display: 'flex',
-                    gap: '2rem',
-                    fontSize: '1.4rem'
-                }}>
-                    <a href="">About</a>
-                    <a href="">Contact</a>
-                    <a href="">GitHub</a>
-                </div>
+
             </div>
             <div style={{
                 width: '100vw',

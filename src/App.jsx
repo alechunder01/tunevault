@@ -1,3 +1,4 @@
+// App.jsx
 import React, { useState } from 'react';
 import { albums } from './data/data.js';
 import AlbumTile from './components/AlbumTile.jsx';
@@ -5,11 +6,20 @@ import Navbar from './components/Navbar.jsx';
 import AnimatedGradient from './components/AnimatedGradient.jsx';
 import Footer from './components/Footer.jsx';
 
+const toSlug = (name) =>
+  name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+
 function App() {
   const [query, setQuery] = useState('');
   const [activeArtist, setActiveArtist] = useState(null);
   const [activeGenre, setActiveGenre] = useState(null);
   const [sortBy, setSortBy] = useState('album-az');
+
+  // Read the slug from the URL on first load (e.g. /album/astroworld → "astroworld")
+  const initialSlug = (() => {
+    const match = window.location.pathname.match(/^\/album\/(.+)$/);
+    return match ? match[1] : null;
+  })();
 
   const albumList = Object.values(albums);
 
@@ -36,20 +46,13 @@ function App() {
 
   const sortedAndFiltered = [...filtered].sort((a, b) => {
     switch (sortBy) {
-      case 'album-az':
-        return a.name.localeCompare(b.name);
-      case 'album-za':
-        return b.name.localeCompare(a.name);
-      case 'artist-az':
-        return a.artist.localeCompare(b.artist);
-      case 'artist-za':
-        return b.artist.localeCompare(a.artist);
-      case 'date-oldest':
-        return new Date(a.releaseDate) - new Date(b.releaseDate);
-      case 'date-newest':
-        return new Date(b.releaseDate) - new Date(a.releaseDate);
-      default:
-        return 0;
+      case 'album-az':   return a.name.localeCompare(b.name);
+      case 'album-za':   return b.name.localeCompare(a.name);
+      case 'artist-az':  return a.artist.localeCompare(b.artist);
+      case 'artist-za':  return b.artist.localeCompare(a.artist);
+      case 'date-oldest': return new Date(a.releaseDate) - new Date(b.releaseDate);
+      case 'date-newest': return new Date(b.releaseDate) - new Date(a.releaseDate);
+      default: return 0;
     }
   });
 
@@ -67,10 +70,14 @@ function App() {
         activeGenre={activeGenre}
         sortBy={sortBy}
       />
-        <div className="container mt-3" style={{ paddingTop: '90px' }}>
+      <div className="container mt-3" style={{ paddingTop: '90px' }}>
         <div className="row">
           {sortedAndFiltered.map((album) => (
-            <AlbumTile key={album.id} album={album} />
+            <AlbumTile
+              key={album.id}
+              album={album}
+              initialOpen={initialSlug === toSlug(album.name)}
+            />
           ))}
         </div>
         {sortedAndFiltered.length === 0 && (
@@ -79,16 +86,7 @@ function App() {
           </p>
         )}
       </div>
-      <Footer/>
-      <button className='popupbutton'>
-        About
-      </button>
-      <button className='popupbutton'>
-        Contact
-      </button>
-      <button className='popupbutton'>
-        Github
-      </button>
+      <Footer />
     </>
   );
 }

@@ -1,60 +1,38 @@
 // AlbumTile.jsx
 import React, { useState, useEffect, useRef } from 'react';
 
-const AlbumTile = ({ album }) => {
+const toSlug = (name) =>
+  name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+
+const AlbumTile = ({ album, initialOpen }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isAnimatingIn, setIsAnimatingIn] = useState(false);
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-
-  // NEW: stores the dominant color extracted from the album cover.
-  // Starts as null — the modal uses a neutral fallback until Color Thief runs.
   const [dominantColor, setDominantColor] = useState(null);
 
   const overlayRef = useRef(null);
-
-  // NEW: ref attached to the <img> inside the modal so Color Thief can read its pixels.
   const imgRef = useRef(null);
 
-  // NEW: Color Thief extraction function.
-  // Called by the <img> onLoad event inside the modal.
-  // Color Thief's getPalette() returns an array of [r, g, b] arrays.
-  // We only need the first one (index 0) — that's the most dominant color.
   const extractColor = () => {
     try {
       const img = imgRef.current;
-      if (!img || !img.complete) return; // safety check: image must be fully loaded
-
+      if (!img || !img.complete) return;
       const thief = new ColorThief();
-      const [r, g, b] = thief.getColor(img); // returns a single [r, g, b] array
-
+      const [r, g, b] = thief.getColor(img);
       setDominantColor({ r, g, b });
     } catch (err) {
-      // Color Thief can fail if the image is cross-origin or not fully loaded.
-      // We silently swallow the error and just keep the neutral fallback.
       console.warn('ColorThief failed:', err);
     }
   };
 
-  // NEW: builds the modal card's background style based on dominantColor.
-  // When dominantColor is null (not extracted yet), falls back to a neutral dark glass.
-  // When extracted, layers two things:
-  //   1. A low-opacity fill of the dominant color (the tint)
-  //   2. A subtle radial glow of the same color in the top-left corner for depth
   const getModalBackground = () => {
-    if (!dominantColor) {
-      // Fallback: neutral dark glass, same as before
-      return 'rgba(30, 20, 40, 0.45)';
-    }
+    if (!dominantColor) return 'rgba(30, 20, 40, 0.45)';
     const { r, g, b } = dominantColor;
-    // The tint is intentionally low opacity (0.25) so the glass effect still shows through.
-    // Too high and it looks like a solid color block — too low and you can't see the tint.
     return `rgba(${r}, ${g}, ${b}, 0.25)`;
   };
 
-  // NEW: builds a matching box-shadow glow on the modal card using the dominant color.
-  // This makes the card look like it's glowing from within with the album's color.
   const getModalGlow = () => {
     if (!dominantColor) return '0 16px 48px rgba(0,0,0,0.5)';
     const { r, g, b } = dominantColor;
@@ -63,6 +41,8 @@ const AlbumTile = ({ album }) => {
 
   const openModal = () => {
     setIsVisible(true);
+    const slug = toSlug(album.name);
+    window.history.pushState({ albumSlug: slug }, '', `/album/${slug}`);
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         setIsOpen(true);
@@ -74,11 +54,12 @@ const AlbumTile = ({ album }) => {
   const closeModal = () => {
     setIsAnimatingIn(false);
     setIsAnimatingOut(true);
+    window.history.pushState({}, '', '/');
     setTimeout(() => {
       setIsOpen(false);
       setIsAnimatingOut(false);
       setIsVisible(false);
-      setDominantColor(null); // NEW: reset the color when modal closes so it doesn't bleed into next open
+      setDominantColor(null);
     }, 420);
   };
 
@@ -86,6 +67,7 @@ const AlbumTile = ({ album }) => {
     if (e.target === overlayRef.current) closeModal();
   };
 
+  // Close on Escape key
   useEffect(() => {
     if (!isOpen) return;
     const handleKey = (e) => { if (e.key === 'Escape') closeModal(); };
@@ -93,10 +75,23 @@ const AlbumTile = ({ album }) => {
     return () => window.removeEventListener('keydown', handleKey);
   }, [isOpen]);
 
+  // Handle browser back/forward button
+  useEffect(() => {
+    const handlePop = () => { if (isOpen) closeModal(); };
+    window.addEventListener('popstate', handlePop);
+    return () => window.removeEventListener('popstate', handlePop);
+  }, [isOpen]);
+
+  // Lock body scroll while modal is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [isOpen]);
+
+  // Deep-link: open immediately if this album matches the URL on first load
+  useEffect(() => {
+    if (initialOpen) openModal();
+  }, []);
 
   return (
     <>
@@ -156,12 +151,6 @@ const AlbumTile = ({ album }) => {
             transition: 'background-color 0.42s ease, backdrop-filter 0.42s ease',
           }}
         >
-          {/* ── Modal card ──
-              NEW: background and boxShadow are now driven by getModalBackground() and getModalGlow().
-              The background transitions smoothly because dominantColor updates via setState,
-              which triggers a re-render — and the CSS transition on the div picks it up.
-              We added 'background 1.2s ease' to the transition so the tint fades in
-              gracefully after Color Thief finishes extracting, rather than snapping. */}
           <div
             className="glass-tile text-white p-5"
             style={{
@@ -174,11 +163,9 @@ const AlbumTile = ({ album }) => {
               overflow: 'hidden',
               opacity: isAnimatingIn ? 1 : 0,
               transform: isAnimatingIn ? 'scale(1) translateY(0)' : 'scale(0.92) translateY(24px)',
-              // NEW: added 'background 1.2s ease, box-shadow 1.2s ease' so the color tint
-              // fades in smoothly after extraction instead of popping in instantly
               transition: 'opacity 0.42s cubic-bezier(0.22, 1, 0.36, 1), transform 0.42s cubic-bezier(0.22, 1, 0.36, 1), background 1.2s ease, box-shadow 1.2s ease',
-              background: getModalBackground(), // NEW: tinted glass background
-              boxShadow: getModalGlow(),         // NEW: colored glow around the card
+              background: getModalBackground(),
+              boxShadow: getModalGlow(),
             }}
           >
             {/* ── Left: info + tracklist ── */}
@@ -260,11 +247,6 @@ const AlbumTile = ({ album }) => {
               gap: '1.5rem',
               flexShrink: 0,
             }}>
-              {/* NEW: crossOrigin="anonymous" is REQUIRED for Color Thief to read pixel data.
-                  Without it the browser throws a CORS security error when Color Thief
-                  tries to call canvas.getImageData() on the image.
-                  onLoad={extractColor} fires once the image is fully loaded and ready,
-                  which is the earliest safe moment to run Color Thief on it. */}
               <img
                 ref={imgRef}
                 src={album.albumCover}
